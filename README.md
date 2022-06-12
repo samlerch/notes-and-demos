@@ -1,2 +1,2 @@
-# notes-and-demos
-All the notes and demos we cover in class
+# Welcome to the 220613 Java Angular Enterprise Batch!
+
