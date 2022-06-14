@@ -23,6 +23,7 @@ public class ScannerDriver {
 		
 		System.out.println("In the future you, " + name + ", will be " + getFutureAge(age) + " years old");
 		
+		scan.close();
 	}
 	
 	public static int getFutureAge(int currentAge) {
