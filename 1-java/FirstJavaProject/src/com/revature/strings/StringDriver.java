@@ -47,7 +47,7 @@ public class StringDriver {
 		sb.append("s");
 		sb.append("t");
 		
-		sb.insert(3, "Try this");
+		sb.insert(0, "Try this");
 		
 		System.out.println(sb);
 		
