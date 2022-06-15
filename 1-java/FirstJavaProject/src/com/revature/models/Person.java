@@ -3,10 +3,18 @@ package com.revature.models;
 public class Person {
 	
 	// Properties or states
-	private String name;
-	private int age;
-	private double height;
-	private double weight;
+	 String name;
+	 int age;
+	 double height;
+	 double weight;
+	
+	public void walk(int feet) {
+		System.out.println("I walked " + feet + " feet!");
+	}
+	
+	public  void introduce(String name) {
+		System.out.println("Hey my name is " + name);
+	}
 	
 	// No arg constructor
 	public Person() {
