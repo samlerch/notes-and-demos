@@ -162,8 +162,15 @@ public class CollectionsDriver {
 		System.out.println(intSet);
 		
 		// Search across this
-		
 		System.out.println(intSet.contains(3));
+		
+		System.out.println("==================");
+		
+		List<Integer> whatevr = new ArrayList<>(3);
+		
+		System.out.println(whatevr);
+		
+		System.out.println(whatevr.size());
 		
 		
 	}
