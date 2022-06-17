@@ -1,11 +1,14 @@
 package com.revature.collections;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 import java.util.Vector;
 
@@ -171,6 +174,66 @@ public class CollectionsDriver {
 		System.out.println(whatevr);
 		
 		System.out.println(whatevr.size());
+		
+		
+		System.out.println("+--------------------+");
+		a1 = new Animal("Tiger", 12);
+		a2 = new Animal("Dog", 4);
+		a3 = new Animal("Bear", 5);
+		
+		
+		System.out.println("============QUEUES============");
+		
+		Queue<Animal> animalQ = new LinkedList<Animal>();
+		
+		animalQ.add(a1);
+		animalQ.add(a2);
+		animalQ.add(a3);
+		
+		System.out.println(animalQ);
+		
+		// Iterating over the queue
+		
+		while(animalQ.size() != 0) {
+			System.out.println("Queue Size: " + animalQ.size());
+			
+			// We'll call the .poll method to remove the head of the queue
+			System.out.println("Processing ... " + animalQ.poll());
+			
+			// Lets view the remaining queue
+			System.out.println(animalQ);
+		}
+		
+		Deque<Integer> deque = new ArrayDeque<>();
+		
+		deque.offer(10);
+		deque.offer(20);
+		deque.offer(30);
+		
+		System.out.println(deque);
+		
+		deque.addFirst(564);
+		deque.addFirst(291);
+		
+		System.out.println(deque);
+		
+		deque.addLast(24);
+		deque.addLast(14);
+		
+		System.out.println(deque);
+		
+		System.out.println("Peeking at the head... " + deque.peekFirst());
+		
+		System.out.println("Peeking at the tail..." + deque.peekLast());
+		
+		System.out.println("Poll from the head ..." + deque.pollFirst());
+		
+		System.out.println("Poll from the tail..." + deque.pollLast());
+		
+		System.out.println(deque);
+		
+		
+		
 		
 		
 	}
