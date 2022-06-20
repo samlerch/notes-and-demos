@@ -109,34 +109,38 @@ insert into employee (id, first_name, last_name, email, department) values (99, 
 insert into employee (id, first_name, last_name, email, department) values (100, 'Thorpe', 'Vanyushin', 'tvanyushin2r@unicef.org', 'Engineering');
 
 -- Insert a new entry for the 101st employee Lexie Vail, her email is lvail0@nyu.edu and she works in Legal
-
+insert into employee (id, first_name, last_name, email, department) values (101, 'Lexie', 'Vail', 'lvail0@nyu.edu', 'Legal');
 -- Insert a new entry for the 102nd employee Horton Farrow, his email is hfarrow1@answers.com and he works in Services
-
+INSERT INTO employee VALUES (102, 'Horton', 'Farrow', 'hfarrow1@answers.com', 'Services')
 -- Insert a new entry for the 103rd employee Pati Ulster, her email is pulster2@macromedia.com and she works in Sales
 
 -- Update the department of the employee with the id of 45 to Legal
-
+UPDATE employee SET department = 'Legal' WHERE id =45;
+SELECT * FROM employee WHERE id = 45;
 -- Update the first and last name of employee number 12 to Jacob Banfield 
-
+UPDATE employee SET first_name = 'Jacob', last_name = 'Banfield' WHERE id = 12;
+SELECT * FROM employee WHERE id = 12;
 -- Delete any employees with the last name Britt
-
+DELETE FROM employee WHERE last_name = 'Britt';
 -- Delete any employees in the services department
-
+DELETE FROM employee WHERE department = 'Services';
 -- Select all entries
-
+SELECT * FROM employee;
 -- Select all first names
-
+SELECT FIRST_name FROM employee;
 -- Select all employees with an ID greater than or equal to 75
-
+SELECT * FROM employee WHERE id >= 75;
 -- Select any employees from the Research and Development department
-
+SELECT * FROM employee WHERE department = 'Research and Development';
 -- Select all employees with an email that ends in .edu
-
+SELECT * FROM employee WHERE email LIKE '%.edu';
 -- Delete all employees with an email that ends in .edu
-
+DELETE FROM employee WHERE email LIKE '%.edu';
 -- Select all employees whose first name ends in 'e' or whose last name starts with 'e'
-
--- Select first and last names for all remaining employees, order it alphabetically by last name 
-
+SELECT * FROM employee WHERE first_name LIKE '%e' OR last_name LIKE 'E%';
+-- Select first and last names for all employees, order it alphabetically by last name 
+SELECT first_name, last_name FROM employee ORDER BY last_name;
 -- Select all entries for employees with a department that starts with 'a', order them by id from largest to smallest
+SELECT * FROM employee WHERE department ILIKE 'a%' ORDER BY id DESC;
+
 
