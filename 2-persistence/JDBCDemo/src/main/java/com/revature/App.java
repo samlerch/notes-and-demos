@@ -30,13 +30,36 @@ public class App {
 	
 	public static void run() {
 		
+		UserService us = new UserService();
+		
 		System.out.println("Welcome to our Bank!");
 		
-		System.out.println("Press 1 if you'd like to register");
+		System.out.println("Press 1 if you're an existing member trying to log in. \nPress 2 if you'd like to register.");
 		
 		int input = scan.nextInt();
 		
 		if (input == 1) {
+			
+			System.out.println("Please enter your username");
+			
+			String username = scan.next();
+			
+			System.out.println("Please enter your password");
+			
+			String password = scan.next();
+			
+			User loggedInUser = us.login(username, password);
+			
+			System.out.println("Welcome to your account: " + loggedInUser.getUsername());
+			
+			// Maybe some data validation
+			
+			// Maybe creating a basic menu for your accounts
+			
+			// Giving option for accounts etc.
+			
+			
+		} else if (input == 2) {
 			
 			System.out.println("Please enter a username");
 			String username = scan.next();
@@ -46,7 +69,7 @@ public class App {
 			
 			User u = new User(username, password, Role.Customer, null);
 			
-			UserService us = new UserService();
+			
 			
 			us.register(u);
 		}

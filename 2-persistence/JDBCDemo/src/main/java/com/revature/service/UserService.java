@@ -38,5 +38,29 @@ public class UserService {
 		
 		return u;
 	}
+	
+	
+	public User login(String username, String password) {
+		
+		// We now need to call upon our userDAO to get us some information about the user with this specific username
+		
+		User returnedUser = udao.findByUsername(username);
+		
+		
+		
+		
+		// Check to see if returned password matches the entered password
+		
+		if (returnedUser.getPassword().equals(password)) {
+			
+			System.out.println("Successfully Logged in!");
+			
+			System.out.println("Reached the inside of the if statement");
+			return returnedUser;
+		}
+		
+		// Otherwise the password is not equal
+		return null;
+	}
 
 }
