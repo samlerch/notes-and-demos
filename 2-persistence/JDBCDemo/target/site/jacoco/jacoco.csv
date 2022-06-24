@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JDBCDemo,com.revature.dao,AccountDao,71,0,2,0,24,0,8,0,7,0
+JDBCDemo,com.revature.dao,UserDao,129,3,4,0,40,1,8,1,6,1
+JDBCDemo,com.revature.models,User,213,38,36,0,50,16,27,7,9,7
+JDBCDemo,com.revature.models,Role,0,34,0,0,0,4,0,1,0,1
+JDBCDemo,com.revature.models,Account,183,0,16,0,50,0,22,0,14,0
+JDBCDemo,com.revature,App,90,0,4,0,25,0,6,0,4,0
+JDBCDemo,com.revature.service,UserService,2,71,2,6,1,16,2,5,0,3
+JDBCDemo,com.revature.service,AccountService,41,0,2,0,10,0,4,0,3,0
+JDBCDemo,com.revature.util,ConnectionUtil,45,0,4,0,18,0,4,0,2,0
+JDBCDemo,com.revature.exceptions,RegisterUserFailedException,0,4,0,0,0,2,0,1,0,1

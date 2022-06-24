@@ -8,7 +8,7 @@ import com.revature.models.User;
 public class UserService {
 	
 	// Dependency Injection
-	private IUserDao udao = new UserDao();
+	public IUserDao udao = new UserDao();
 	
 	public User register(User u) {
 		

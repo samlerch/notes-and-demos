@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JDBCDemo</a> &gt; <a href="index.source.html" class="el_package">com.revature.dao</a> &gt; <span class="el_source">UserDao.java</span></div><h1>UserDao.java</h1><pre class="source lang-java linenums">package com.revature.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
+import java.util.List;
+
+import com.revature.models.Role;
+import com.revature.models.User;
+import com.revature.util.ConnectionUtil;
+
+<span class="fc" id="L14">public class UserDao implements IUserDao{</span>
+
+	public int insert(User u) {
+		// Let's use insert to practice creating a SQL operation
+		
+		// Step 1. Capture the DB connection by using the connection util
+		
+<span class="nc" id="L21">		Connection conn = ConnectionUtil.getConnection(); // Pulls in current connection from connection util</span>
+		
+		// Step 2. Generate a sql statement like &quot;Insert into .....&quot;
+		
+		// Use ? to represent data we're looking to enter into our sql statment
+<span class="nc" id="L26">		String sql = &quot;INSERT INTO users (username, pwd, user_role) values (?, ?, ?) RETURNING users.id&quot;;</span>
+		
+		// Step 2b. Use a prepared statement to avoid SQL injection
+		try {
+<span class="nc" id="L30">			PreparedStatement stmt = conn.prepareStatement(sql);</span>
+			
+			// Start process to set the values we're entering into the DB
+			
+			// Go through each ? and give it a values
+			
+			// Let's start with username
+<span class="nc" id="L37">			stmt.setString(1, u.getUsername());</span>
+			
+			// Let's do the password as well
+<span class="nc" id="L40">			stmt.setString(2, u.getPassword());</span>
+			
+			// User role will be handled slightly since it's a java enum
+<span class="nc" id="L43">			stmt.setObject(3, u.getRole(), Types.OTHER);</span>
+			
+			// Use a resultset to extract the primary key from the user object that was persisted
+			
+			ResultSet rs;
+			
+<span class="nc bnc" id="L49" title="All 2 branches missed.">			if ((rs = stmt.executeQuery()) != null) {</span>
+				
+				// if we return data, we can iterate over it
+				
+<span class="nc" id="L53">				rs.next();</span>
+				
+				// We need to capture the first column of data return (which is the id of the return user object)
+				
+<span class="nc" id="L57">				int id = rs.getInt(1); </span>
+				
+<span class="nc" id="L59">				System.out.println(&quot;We returned a user with id #&quot; + id);</span>
+				
+<span class="nc" id="L61">				return id;</span>
+			}
+			
+			
+			
+			
+<span class="nc" id="L67">		} catch (SQLException e) {</span>
+<span class="nc" id="L68">			System.out.println(&quot;Unable to insert user - sql exception&quot;);</span>
+<span class="nc" id="L69">			e.printStackTrace();</span>
+<span class="nc" id="L70">		}</span>
+		
+		// If our database fails to enter someone in we should return an index that we know our DB could never generate
+		
+<span class="nc" id="L74">		return -1;</span>
+	}
+
+	public User findById(int id) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L79">		return null;</span>
+	}
+
+	public User findByUsername(String username) {
+		
+		// Let's instantiate a user to hold our retrieved user
+		
+<span class="nc" id="L86">		User u = new User();</span>
+		
+		// Try with Resources to connect and work with database
+		
+<span class="nc" id="L90">		try (Connection conn = ConnectionUtil.getConnection()){</span>
+			
+<span class="nc" id="L92">			String sql = &quot;SELECT * FROM users WHERE username = ?&quot;;</span>
+			
+<span class="nc" id="L94">			PreparedStatement stmt = conn.prepareStatement(sql);</span>
+			
+<span class="nc" id="L96">			stmt.setString(1, username);</span>
+			
+			ResultSet rs;
+			
+<span class="nc bnc" id="L100" title="All 2 branches missed.">			if ((rs = stmt.executeQuery()) != null) {</span>
+				
+				// Move the cursor forward
+<span class="nc" id="L103">				rs.next();</span>
+				
+<span class="nc" id="L105">				int id = rs.getInt(&quot;id&quot;);</span>
+<span class="nc" id="L106">				String returnedUsername = rs.getString(&quot;username&quot;);</span>
+<span class="nc" id="L107">				String password = rs.getString(&quot;pwd&quot;);</span>
+<span class="nc" id="L108">				Role role = Role.valueOf(rs.getString(&quot;user_role&quot;));</span>
+				
+<span class="nc" id="L110">				u.setId(id);</span>
+<span class="nc" id="L111">				u.setUsername(returnedUsername);</span>
+<span class="nc" id="L112">				u.setPassword(password);</span>
+<span class="nc" id="L113">				u.setRole(role);</span>
+				
+			} 
+<span class="nc" id="L116">		} catch (SQLException e) {</span>
+<span class="nc" id="L117">			System.out.println(&quot;SQL Exception Thrown - can't retrieve user from DB&quot;);</span>
+<span class="nc" id="L118">			e.printStackTrace();</span>
+<span class="nc" id="L119">		}</span>
+		
+		
+<span class="nc" id="L122">		return u;</span>
+	}
+
+	public List&lt;User&gt; findAll() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L127">		return null;</span>
+	}
+
+	public boolean update(User u) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L132">		return false;</span>
+	}
+
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L137">		return false;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
