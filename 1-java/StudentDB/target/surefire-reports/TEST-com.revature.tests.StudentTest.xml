@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.revature.tests.StudentTest" time="0.083" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB\target\test-classes;C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB\target\classes;C:\Users\brygu\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\brygu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\brygu\AppData\Local\Temp\surefire6184677424042441445\surefirebooter-20220623094328854_3.jar C:\Users\brygu\AppData\Local\Temp\surefire6184677424042441445 2022-06-23T09-43-28_209-jvmRun1 surefire-20220623094328854_1tmp surefire_0-20220623094328854_2tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB\target\test-classes;C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB\target\classes;C:\Users\brygu\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\brygu\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\brygu"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_333\jre"/>
+    <property name="basedir" value="C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\brygu\AppData\Local\Temp\surefire6184677424042441445\surefirebooter-20220623094328854_3.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_333-b02"/>
+    <property name="user.name" value="brygu"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\brygu\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\brygu\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_333"/>
+    <property name="user.dir" value="C:\Users\brygu\Desktop\220613-demos\notes-and-demos\1-java\StudentDB"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\brygu\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\brygu\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\dotnet;C:\Program Files (x86)\Calibre2;C:\Program Files\MATLAB\R2021b\bin;C:\Program Files\Java\jdk1.8.0_333\bin;C:\Gradle\gradle-7.3.3\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_333\bin;C:\Maven\apache-maven-3.8.6\bin;C:\Users\brygu\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\brygu\AppData\Local\Programs\Python\Python39;C:\Users\brygu\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.3\bin;C:\Users\brygu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\brygu\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.333-b02"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testWhenInstantiateStudentThenAssignUniqueGlobalId" classname="com.revature.tests.StudentTest" time="0.004">
+    <system-out><![CDATA[Setting Up the test suite
+Setting up before each test
+John Doe 4
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+  <testcase name="testStudentObjectEquality" classname="com.revature.tests.StudentTest" time="0.001">
+    <system-out><![CDATA[Setting up before each test
+John Doe 4
+John Doe 4
+Student [firstName=John, lastName=Doe, gradeYear=4, studentId=41001, courses=[], tuitionBalance=0.0]
+Student [firstName=John, lastName=Doe, gradeYear=4, studentId=41002, courses=[], tuitionBalance=0.0]
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBadGradeYearExceptionIsThrown" classname="com.revature.tests.StudentTest" time="0.001">
+    <system-out><![CDATA[Setting up before each test
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+  <testcase name="testSetStudentIdCreatesUniqueId" classname="com.revature.tests.StudentTest" time="0.001">
+    <system-out><![CDATA[Setting up before each test
+John Doe 4
+John Doe 4
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+  <testcase name="testThisIsWorking" classname="com.revature.tests.StudentTest" time="0.001">
+    <system-out><![CDATA[Setting up before each test
+The sum is 5
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+  <testcase name="testStudentObjectEqualityNegative" classname="com.revature.tests.StudentTest" time="0.002">
+    <system-out><![CDATA[Setting up before each test
+John Doe 4
+John Doe 4
+Student [firstName=John, lastName=Doe, gradeYear=4, studentId=41001, courses=[], tuitionBalance=0.0]
+Student [firstName=John, lastName=Doe, gradeYear=4, studentId=41002, courses=[], tuitionBalance=0.0]
+Tearing down after every test
+
+]]></system-out>
+  </testcase>
+</testsuite>
