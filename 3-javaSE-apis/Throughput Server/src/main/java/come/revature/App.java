@@ -19,7 +19,7 @@ public class App {
 	
 	private static final String INPUT_FILE = "C:\\Users\\brygu\\Desktop\\220613-demos\\notes-and-demos\\3-javaSE-apis\\Throughput Server\\src\\main\\resources\\war_and_peace.txt";
 	
-	private static final int NUMBER_OF_THREADS = 4;
+	private static final int NUMBER_OF_THREADS = 1;
 	
 	public static void main(String[] args) {
 		
