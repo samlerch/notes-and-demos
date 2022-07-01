@@ -30,6 +30,14 @@
 			<version>5.4.30.Final</version>
 		</dependency>
 
+		<!-- Let's pull in a local dependency from another project -->
+
+		<dependency>
+			<groupId>com.revature</groupId>
+			<artifactId>ReflectionFrameworkDemo</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 
 	</dependencies>
 
