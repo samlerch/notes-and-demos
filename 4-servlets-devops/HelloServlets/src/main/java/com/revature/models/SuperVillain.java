@@ -1,0 +1,75 @@
+package com.revature.models;
+
+import java.util.Objects;
+
+// Just a basic Java POJO
+public class SuperVillain {
+	
+	private String name;
+	private String superPower;
+	private double bounty;
+	
+	// Add in no-args constructor, all-args constructor, getters and setters, and override the hashcode, toString
+	// and equal methods from the object class
+	
+	public SuperVillain() {
+		
+	}
+
+	public SuperVillain(String name, String superPower, double bounty) {
+		super();
+		this.name = name;
+		this.superPower = superPower;
+		this.bounty = bounty;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSuperPower() {
+		return superPower;
+	}
+
+	public void setSuperPower(String superPower) {
+		this.superPower = superPower;
+	}
+
+	public double getBounty() {
+		return bounty;
+	}
+
+	public void setBounty(double bounty) {
+		this.bounty = bounty;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(bounty, name, superPower);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SuperVillain other = (SuperVillain) obj;
+		return Objects.equals(bounty, other.bounty) && Objects.equals(name, other.name)
+				&& Objects.equals(superPower, other.superPower);
+	}
+
+	@Override
+	public String toString() {
+		return "SuperVillain [name=" + name + ", superPower=" + superPower + ", bounty=" + bounty + "]";
+	}
+	
+	
+
+}
