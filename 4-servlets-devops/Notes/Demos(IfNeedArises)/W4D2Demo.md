@@ -2,7 +2,7 @@
 
 I'm not entirely sure at this point why I had us put in the maven WAR plugin, as it clearly created some confusion, especially considering the fact that you can get away with not necessarily having it in there, even though the pom.xml File is not happy. We can see what we originally had below, note that the build plugin is not yet commented out, meaning that when we package our WAR file it'll have the name "check"
 
-![img1](../images/img1.png)
+![img1](./images/img1.png)
 
 This was causing an issue on the front end where we could only access the page by going to http://localhost:8080/check but we can solve this in a couple of ways. Probably the simplest is to just change the final name to HelloServlets so when our project is packaged it's called that. See below:
 
