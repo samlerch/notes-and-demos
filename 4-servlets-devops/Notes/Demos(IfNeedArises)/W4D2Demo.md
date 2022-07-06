@@ -23,7 +23,7 @@ We'll use 2.13.3 for this instance and add it to our pom.xml. Save and update th
 
 ![img](https://github.com/220613-Java-Angular-Enterprise/notes-and-demos/blob/main/4-servlets-devops/Notes/Demos(IfNeedArises)/images/img5.PNG)
 
-![img](https://github.com/220613-Java-Angular-Enterprise/notes-and-demos/blob/main/4-servlets-devops/Notes/Demos(IfNeedArises)/images/img6.PNG
+![img](https://github.com/220613-Java-Angular-Enterprise/notes-and-demos/blob/main/4-servlets-devops/Notes/Demos(IfNeedArises)/images/img6.PNG)
 
 Now that we finally have all that, let's head over to our DirectServlet Class and add in our new method to handle a post request. Note that we need to import for both the SuperVillain class as well as the Object Mapper. The latter comes from Jackson Databind and allows us to convert an object to a JSON.
 
@@ -53,7 +53,7 @@ Now let's reload our page and see what it looks like
 
 Sure, it's not perfect but it's better than it was. Good Styling using CSS and other tools like BootStrap can really make html pages come to life, so don't be afraid to explore and learn some new things. If you're curious I highly recommed the resources on W3 schools for HTML and CSS, go explore and have fun. Next for us now though is an error page. For this, we'll just make a simple HTML page that appears if there is an error. So we'll create an Error.html page and go from there. 
 
-![img](https://github.com/220613-Java-Angular-Enterprise/notes-and-demos/blob/main/4-servlets-devops/Notes/Demos(IfNeedArises)/images/img14.PNG)
+![img](https://github.com/220613-Java-Angular-Enterprise/notes-and-demos/blob/main/4-servlets-devops/Notes/Demos(IfNeedArises)/images/img14.JPG)
 
 Next, we need to add this to our page mapping inside of our web.xml file like so
 
