@@ -2,16 +2,15 @@ package com.revature.models;
 
 import java.util.Objects;
 
-// Just a basic Java POJO
+// Just a regular POJO
 public class SuperVillain {
 	
+	// Add in some fields here
 	private String name;
 	private String superPower;
 	private double bounty;
 	
-	// Add in no-args constructor, all-args constructor, getters and setters, and override the hashcode, toString
-	// and equal methods from the object class
-	
+	// Let's add in some methods and constructors and such
 	public SuperVillain() {
 		
 	}
@@ -61,15 +60,15 @@ public class SuperVillain {
 		if (getClass() != obj.getClass())
 			return false;
 		SuperVillain other = (SuperVillain) obj;
-		return Objects.equals(bounty, other.bounty) && Objects.equals(name, other.name)
-				&& Objects.equals(superPower, other.superPower);
+		return Double.doubleToLongBits(bounty) == Double.doubleToLongBits(other.bounty)
+				&& Objects.equals(name, other.name) && Objects.equals(superPower, other.superPower);
 	}
 
 	@Override
 	public String toString() {
 		return "SuperVillain [name=" + name + ", superPower=" + superPower + ", bounty=" + bounty + "]";
 	}
-	
-	
 
+	
+	
 }

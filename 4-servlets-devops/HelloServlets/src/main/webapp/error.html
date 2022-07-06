@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Error</title>
+<title>Error 404</title>
 </head>
 <body>
-	<!--  We need to inform our Tomcat Web Container, that when a 404 status code gets thrown
-	(resource not found - meaning the client made a mistake, looking for a resource that DOES NOT exist on our server -->
-	<p>This is not the page you're looking for!</p>
 
-	<br />
-
+	<!-- We now need to tell Tomcat to send users here in the event of an error(specifically a 404 in this case) -->
+	<p> This is not the page you're looking for</p>
+	
+	<br/>
+	
 	<a href="index.html">Back</a>
 
 </body>

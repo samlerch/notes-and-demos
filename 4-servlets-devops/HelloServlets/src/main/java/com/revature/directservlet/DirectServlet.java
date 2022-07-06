@@ -38,34 +38,28 @@ public class DirectServlet extends HttpServlet{
 		
 		// Now that we have a method to handle our get request we can map this functionality
 	}
-	
-	/**
-	 * This method is responsible for handling a POST request that a client sends.
-	 * Instantiate an object, and send back the object's data in the form of JSON - JavaScript Object Notation
-	 * JSON = a data interchange format
+
+	/*
+	 * This method is going to be responsible for handling a POST request that the client sends. We'll
+	 * instantiate an object, and send back the object's data in the form of a JSON for data interchange
 	 */
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
-		// Step 1. Declare the type of content for our HTTP response
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		// Step 1: Declare the type of our HTTP response
 		response.setContentType("application/json");
-
-		// Step 2. Instantiate an object
+		
+		// Step 2: Instantiate the object
 		SuperVillain vill = new SuperVillain("The Penguin", "money", 900.10);
-
-		// transform a java object into JSON and send it to the browser (client) in the body of the HTTP response
-		// Here we're both transforming is AND sending it via the print writer on the response
+		
+		// Now we need to marshall or transform the object into JSON format and send it to the browser in body of an
+		// HTTP response
+		// Here we're going to transform it AND send it using the PrintWriter
 		response.getWriter().write(new ObjectMapper().writeValueAsString(vill));
-		// import ObjectMapper from Jackson Databind
+		
 	}
-
-	/**
-	 * HTTP Response
-	 * 
-	 * Response Header
-	 * 	- HTTP Version
-	 * 	- Status code
-	 * 
-	 * Response Body (contains the data its sending back!)
-	 */
+	
+	
+	
+	
 }

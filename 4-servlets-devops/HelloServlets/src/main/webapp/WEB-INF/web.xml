@@ -36,15 +36,17 @@
 		<servlet-name>SessionServlet</servlet-name>
 		<servlet-class>com.revature.sessionservlet.SessionServlet</servlet-class>
 	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>SessionServlet</servlet-name>
 		<url-pattern>/sesserv</url-pattern>
 	</servlet-mapping>
-
+	
 	<servlet>
 		<servlet-name>HelperSessionServlet</servlet-name>
 		<servlet-class>com.revature.sessionservlet.HelperSessionServlet</servlet-class>
 	</servlet>
+
 	<servlet-mapping>
 		<servlet-name>HelperSessionServlet</servlet-name>
 		<url-pattern>/helpersesserv</url-pattern>
@@ -55,6 +57,5 @@
 		<error-code>404</error-code>
 		<location>/error.html</location>
 	</error-page>
-
 
 </web-app>
