@@ -6,4 +6,5 @@ phases:
       - mvn clean package
 artifacts:
   files:
+    - 'Dockerfile'
     - target/FrontControllerDemo.war
