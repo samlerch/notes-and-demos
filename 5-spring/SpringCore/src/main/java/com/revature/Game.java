@@ -6,7 +6,7 @@ public interface Game {
 	
 	int getGuess();
 	
-	void setGuess();
+	void setGuess(int guess);
 	
 	int getSmallest();
 	

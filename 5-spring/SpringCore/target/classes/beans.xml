@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- We define our Application Context Here, which is read by the Spring 
+		IoC container -->
+
+
+
+	<!-- In order to scan for annotations, when using this config you add this: -->
+	<context:annotation-config />
+	<!-- This will scan for the @Autowire annotation within the beans declared 
+		here -->
+
+	<!-- Now that we've set up the annotations we need to scan for them -->
+	<context:component-scan
+		base-package="com.revature"></context:component-scan>
+	<!-- This will scan all classes within the package and looks for the bean 
+		marked with @Component -->
+
+	<!-- Autowiring -->
+	<bean id="game" class="com.revature.GameImpl"></bean>
+
+	<!-- <bean id="myNumGenerator" class="com.revature.NumberGeneratorImpl"></bean> -->
+
+	<!-- Define its use in constructor injection -->
+
+	<!-- <bean id = "game" class = "com.revature.GameImpl"> <constructor-arg 
+		ref = "myNumGenerator" /> </bean> -->
+
+	<!-- Setter injection here -->
+	<!-- <bean id="game" class="com.revature.GameImpl"> <property name = "numberGenerator" 
+		ref="myNumGenerator" /> </bean> -->
+
+</beans>
