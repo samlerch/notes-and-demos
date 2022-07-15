@@ -12,8 +12,8 @@
 ### Spring Core
 
 1.  What are Spring Projects and Spring Modules?
-    Spring projects are frameworks that provide solutions to other issues faces by enterprise applications
-    Spring Modules are modules that handle specific programatical tasks
+    - Spring projects are frameworks that provide solutions to other issues faces by enterprise applications
+    - Spring Modules are modules that handle specific programatical tasks
     
 2.  What is IOC and what does the IOC Container do?
     
