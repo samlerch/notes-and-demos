@@ -16,7 +16,7 @@
     - Spring Modules are modules that handle specific programatical tasks
     
 2.  What is IOC and what does the IOC Container do?
-    - IoC stands for Inversion of Control and it is the core of Spring Framework.  IoC Creates the objects, configures and assembles their dependencies, manages their        entire life cycle.  Since the Controlling of Java objects and their lifecycle is not done by the developers, hence the name Iversion Of Control
+    - IoC stands for Inversion of Control and it is the core of Spring Framework.  IoC Creates the objects, configures and assembles their dependencies, manages their        entire life cycle.  <i>Since the Controlling of Java objects and their lifecycle is not done by the developers, hence the name Iversion Of Control</i>
     - The IoC Container uses dependency Injection (DI) to manage the components that make up the application.  It gets the information about the objects from a configruation file(XML) or Java Code or Java Annotations and Java POJO class.  These objects are called Beans
     
 3.  What is dependency injection and what are some of the benefits of using dependency injection?
