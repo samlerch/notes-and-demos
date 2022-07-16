@@ -16,14 +16,20 @@
     - Spring Modules are modules that handle specific programatical tasks
     
 2.  What is IOC and what does the IOC Container do?
-    - IoC stands for Inversion of Control and it is the core of Spring Framework.  IoC Creates the objects, configures and assembles their dependencies, manages their        entire life cycle.  <b>Since the Controlling of Java objects and their lifecycle is not done by the developers, hence the name Iversion Of Control</b>
-    - The IoC Container uses dependency Injection (DI) to manage the components that make up the application.  It gets the information about the objects from a configruation file(XML) or Java Code or Java Annotations and Java POJO class.  These objects are called Beans
+    - IoC stands for Inversion of Control and it is the core of Spring Framework.  IoC Creates the objects, configures and assembles their dependencies, manages their        entire life cycle.  <b>Since the Controlling of Java objects and their lifecycle is not done by the developers, hence the name Inversion Of Control</b>
+    - The IoC Container uses dependency Injection (DI) to manage the components that make up the application.  It gets the information about the objects from a configuration file(XML) or Java Code or Java Annotations and Java POJO class.  These objects are called Beans
     
 3.  What is dependency injection and what are some of the benefits of using dependency injection?
     
 4.  What types of dependency injection does Spring support?
     
 5.  What are some differences between BeanFactory and ApplicationContext? Which one eagerly instantiates your beans?
+    - BeanFactory does not support Annotation-based configuration whereas ApllicationContext does.
+    - ApplicationContext is the sub-interface of BeanFactory
+    - XMLBeanFactory implements BeanFactory <b>Whereas</> FileSystemXmlAPplicationContext, ClassPathXmlApplicationCOntext and AnnotationCOnfigWebApplicationContext implements ApplicationCOntext.
+    -BeanFactory instantiate beans when getBean() methods gets called <b>whereas</b> ApplicationContext instantiate bean at the time container start
+    - Bean factory does not have the ability to push events to the beans <b>whereas</b> Application Context have the ability to push events to the beans
+    - BeanFactory uses Lazy loading <b>whereas</b> ApplicationContext uses Aggressive Loading
     
 6.  What is the Spring Bean lifecycle?
     
