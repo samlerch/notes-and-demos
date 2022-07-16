@@ -49,6 +49,7 @@
     - Autowiring is a feature of Spring framework which lets you Inject Dependency implicitly. Basically it will be use Setter Injection / Constructor Injection internally.
     
 8.  What are the different ways that Spring can wire beans?
+    https://www.javainterviewpoint.com/autowiring-in-spring/#:~:text=Autowiring%20is%20a%20feature%20of%20Spring%20framework%20which,be%20used%20to%20inject%20primitive%20and%20string%20values.
     Spring can wire beans by:
     - node which is the default one, it means not aotowiring by default
     - byName
@@ -57,6 +58,15 @@
     - autodetect which useseither of two modes i.e. constructor or byType modes.  First it tries to autowire by constructor if it doesn't work then it autowire byType
     
 9.  What are the scopes of Spring beans? Which is default?
+    Spring Bean Scope Types are:
+    - singleton (default) Single bean object instance per spring IoC container
+    - prototype - Opposite to singleton, it produces a new instance each and every time a bean is requested
+    - request - A single instance will be created and available during complete lifecycle of an <b>HTTP request</b>.  Only valid in web-aware Spring <b>ApplicationContext</b>
+    - session - A single instance will be created and available during complete lifecycle of an <b>HTTP Session</b>.  Only valid in web-aware Spring <b>ApplicationContext</b>
+    - application - A single instance will be created and available during complete lifecycle of <b>ServletContext</b>.
+Only valid in web-aware Spring <b>ApplicationContext</b>
+    - websocket - A single instance will be created and available during complete lifecycle of <b>WebSocket</b>.
+Only valid in web-aware Spring <b>ApplicationContext</b>.
     
 10.  What is the concept of component scanning and how would you set it up?
     
