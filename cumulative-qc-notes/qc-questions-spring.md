@@ -33,6 +33,7 @@
     - BeanFactory uses Lazy loading <b>whereas</b> ApplicationContext uses Aggressive Loading
     
 6.  What is the Spring Bean lifecycle?
+    https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/
     - The bean life cycle refers to when & how the bean is instantiated, what action it performs while it lives, and when & have its destroyed.
     - The flow of the bean life cycle is:
         - Container Started
@@ -43,6 +44,9 @@
         - Custom destroy
     
 7.  What is bean wiring? What about autowiring?
+    https://www.javainterviewpoint.com/autowiring-in-spring/#:~:text=Autowiring%20is%20a%20feature%20of%20Spring%20framework%20which,be%20used%20to%20inject%20primitive%20and%20string%20values.
+    - Configuring beans and their properties for dependency injection in spring configuration file (.xml) and attaching it to its corresponding object is known as      <b>Bean Wiring</b>.
+    - Autowiring is a feature of Spring framework which lets you Inject Dependency implicitly. Basically it will be use Setter Injection / Constructor Injection internally.
     
 8.  What are the different ways that Spring can wire beans?
     
