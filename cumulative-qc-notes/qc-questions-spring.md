@@ -49,6 +49,12 @@
     - Autowiring is a feature of Spring framework which lets you Inject Dependency implicitly. Basically it will be use Setter Injection / Constructor Injection internally.
     
 8.  What are the different ways that Spring can wire beans?
+    Spring can wire beans by:
+    - node which is the default one, it means not aotowiring by default
+    - byName
+    - byType
+    - constructor
+    - autodetect which useseither of two modes i.e. constructor or byType modes.  First it tries to autowire by constructor if it doesn't work then it autowire byType
     
 9.  What are the scopes of Spring beans? Which is default?
     
