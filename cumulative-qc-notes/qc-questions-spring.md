@@ -58,6 +58,7 @@
     - autodetect which useseither of two modes i.e. constructor or byType modes.  First it tries to autowire by constructor if it doesn't work then it autowire byType
     
 9.  What are the scopes of Spring beans? Which is default?
+    https://howtodoinjava.com/spring-core/spring-bean-scopes/
     Spring Bean Scope Types are:
     - singleton (default) Single bean object instance per spring IoC container
     - prototype - Opposite to singleton, it produces a new instance each and every time a bean is requested
@@ -69,11 +70,16 @@ Only valid in web-aware Spring <b>ApplicationContext</b>
 Only valid in web-aware Spring <b>ApplicationContext</b>.
     
 10.  What is the concept of component scanning and how would you set it up?
+     https://zetcode.com/spring/componentscan/#:~:text=Component%20scanning%20enables%20auto-detection%20of%20beans%20by%20Spring,as%20%40Component%2C%20%40Configuration%2C%20%40Service%20are%20auto-detected%20by%20Spring.
+     - Component scanning enables auto-detection of beans by Spring container.
+     - Using stereotype @ComponentScan annotation enables component scanning in Spring.
     
 11.  What are the benefits and limitations of Java configuration?
     
 12.  What does the @Configuration and @Bean annotations do?
-    
+     https://www.geeksforgeeks.org/spring-bean-annotation-with-example/#:~:text=One%20of%20the%20most%20important%20annotations%20in%20spring,also%20a%20part%20of%20the%20spring%20core%20framework.
+     - Spring @Configuration annotation is part of the spring core framework. Spring Configuration annotation indicates that the class has @Bean definition methods. So Spring container can process the class and generate Spring Beans to be used in the application.
+     - One of the most important annotations in spring is the @Bean annotation which is applied on a method to specify that it returns a bean to be managed by Spring context. Spring Bean annotation is usually declared in Configuration classes methods
 13.  What is @Value used for?
     
 14.  What is Spring Expression Language? What can you reference using SpEL? What is the difference between $ and # in @value expressions?
