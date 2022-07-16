@@ -81,9 +81,17 @@ Only valid in web-aware Spring <b>ApplicationContext</b>.
      - Spring @Configuration annotation is part of the spring core framework. Spring Configuration annotation indicates that the class has @Bean definition methods. So Spring container can process the class and generate Spring Beans to be used in the application.
      - One of the most important annotations in spring is the @Bean annotation which is applied on a method to specify that it returns a bean to be managed by Spring context. Spring Bean annotation is usually declared in Configuration classes methods
 13.  What is @Value used for?
-    
+     - Spring @Value annotation is used to inject values into variables and method arguments. We can either read spring environment variables or system variables. It also supports SpEL.
+     
 14.  What is Spring Expression Language? What can you reference using SpEL? What is the difference between $ and # in @value expressions?
-    
+     - SpEL is a scripting language that allows you to query and manipulate an object graph in real-time. JSP EL, OGNL, MVEL, and JBoss EL are just a few of the expression languages accessible.
+     - What can you reference using SpEL?
+     - $ in @value expressions:
+        - $ is used to read Property Value in Properties File; t can only be used to dereference properties, Ex: @Value("${proxy.host}")
+        - ${} can only do get
+      - # in @value expressions:
+        - # is used to run Spring Expression
+        - #{} can do get an dset
 <br>
 
 ### Spring MVC
