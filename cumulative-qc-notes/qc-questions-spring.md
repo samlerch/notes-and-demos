@@ -27,7 +27,7 @@
     https://www.tutorialspoint.com/difference-between-application-context-and-beanfactory-in-spring-framework
     - BeanFactory does not support Annotation-based configuration <b>whereas</b> ApllicationContext does.
     - ApplicationContext is the sub-interface of BeanFactory
-    - XMLBeanFactory implements BeanFactory <b>whereas</b> FileSystemXmlAPplicationContext, ClassPathXmlApplicationCOntext and AnnotationCOnfigWebApplicationContext implements ApplicationCOntext.
+    - XMLBeanFactory implements BeanFactory <b>whereas</b> FileSystemXmlAPplicationContext, ClassPathXmlApplicationContext and AnnotationConfigWebApplicationContext implements ApplicationContext.
     - BeanFactory instantiate beans when getBean() methods gets called <b>whereas</b> ApplicationContext instantiate bean at the time container start
     - Bean factory does not have the ability to push events to the beans <b>whereas</b> Application Context have the ability to push events to the beans
     - BeanFactory uses Lazy loading <b>whereas</b> ApplicationContext uses Aggressive Loading
