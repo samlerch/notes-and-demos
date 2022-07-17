@@ -89,7 +89,7 @@ Only valid in web-aware Spring <b>ApplicationContext</b>.
      - $ in @value expressions:
         - $ is used to read Property Value in Properties File; t can only be used to dereference properties, Ex: @Value("${proxy.host}")
         - ${} can only do get
-      - # in @value expressions:
+      - (#) in @value expressions:
         - # is used to run Spring Expression
         - #{} can do get an dset
 <br>
