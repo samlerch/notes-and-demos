@@ -87,7 +87,7 @@ Only valid in web-aware Spring <b>ApplicationContext</b>.
      - SpEL is a scripting language that allows you to query and manipulate an object graph in real-time. JSP EL, OGNL, MVEL, and JBoss EL are just a few of the expression languages accessible.
      - What can you reference using SpEL?
      - $ in @value expressions:
-        - $ is used to read Property Value in Properties File; t can only be used to dereference properties, Ex: @Value("${proxy.host}")
+        - $ is used to read Property Value in Properties File; it can only be used to dereference properties, Ex: @Value("${proxy.host}")
         - ${} can only do get
       - (#) in @value expressions:
         - "#" is used to run Spring Expression
