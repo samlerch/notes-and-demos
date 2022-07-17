@@ -34,7 +34,7 @@
     
 6.  What is the Spring Bean lifecycle?
     https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/
-    - The bean life cycle refers to when & how the bean is instantiated, what action it performs while it lives, and when & have its destroyed.
+    - The bean life cycle refers to when & how the bean is instantiated, what action it performs while it lives, and when & how it dies.
     - The flow of the bean life cycle is:
         - Container Started
         - Bean Instantiated
