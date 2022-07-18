@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <style>
+        /* This is a comment in CSS since everything I code here is in CSS */
+        p {
+            font-family:'Indie Flower', cursive;
+        }
+
+        /* To select something by ID we use # */
+        #my-special-div{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular' , 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 30%;
+            border: 2px aqua solid;
+            color:blueviolet;
+            background-color: burlywood;
+        }
+
+        /* We select elements by their class with a . */
+        .my-special-class{
+            margin-top: 100px;
+            border: dashed rebeccapurple;
+            border-radius: 20px;
+            line-height: 18px;
+            background-color: aquamarine;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id = "inline-styling-example">
+        <h4>CSS rules are defined by key/value pairs, separated by a colon { : }</h4>
+        <p style="color:darkgoldenrod; background-color: black;">This is an example of some inline styling</p>
+
+        <span style="background-color:aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil possimus eum ut ab quas alias natus sit assumenda libero quam maxime blanditiis quo minus aperiam, consequuntur repellat cum facere!</span>
+    </div>
+
+    <div id = "internal-styling-example" >
+
+        <h2>Selectors</h2>
+        <h3>Elements, Classes &amp; Id's</h3>
+
+        <div id="my-special-div">
+            <p>Here's a bunch of text identifies by id <code>my-special-div</code></p>
+            <p>Some more text here</p>
+        </div>
+
+        <div class = "my-special-class">
+            <p> This belongs to a class labeled as <code>my-special-class</code></p>
+        </div>
+
+        <div class = "my-special-class">
+            <p> This also belongs to a class labeled as <code>my-special-class</code></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
