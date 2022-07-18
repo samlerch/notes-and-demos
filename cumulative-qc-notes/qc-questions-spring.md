@@ -12,33 +12,33 @@
 ### Spring Core
 
 1.  What are Spring Projects and Spring Modules?
-    
+        
 2.  What is IOC and what does the IOC Container do?
-    
+        
 3.  What is dependency injection and what are some of the benefits of using dependency injection?
     
 4.  What types of dependency injection does Spring support?
     
 5.  What are some differences between BeanFactory and ApplicationContext? Which one eagerly instantiates your beans?
-    
+       
 6.  What is the Spring Bean lifecycle?
-    
+        
 7.  What is bean wiring? What about autowiring?
-    
+        
 8.  What are the different ways that Spring can wire beans?
-    
+        
 9.  What are the scopes of Spring beans? Which is default?
-    
+        
 10.  What is the concept of component scanning and how would you set it up?
-    
+        
 11.  What are the benefits and limitations of Java configuration?
     
 12.  What does the @Configuration and @Bean annotations do?
-    
+     
 13.  What is @Value used for?
-    
+          
 14.  What is Spring Expression Language? What can you reference using SpEL? What is the difference between $ and # in @value expressions?
-    
+     
 <br>
 
 ### Spring MVC
