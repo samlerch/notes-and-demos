@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Events</title>
+</head>
+<body>
+
+    <h1>Bubble</h1>
+    <div class = "bubble"> DIV
+        <p class = "bubble"> P
+            <a class = "bubble">CLICK ME</a>
+        </p>
+    </div>
+
+    <h1>Capture</h1>
+    <div class = "capture"> DIV
+        <p class = "capture"> P
+            <a class = "capture">CLICK ME</a>
+        </p>
+    </div>
+
+    <h1>Welcome students and staff</h1>
+    <h3>Please Sign In</h3>
+
+    <form id = "form">
+        <label for="username">Username: </label>
+        <input id = "username" type = "text", name = "username" 
+        maxlength="50" required onkeypress="printPressed(event)">
+        <label for="password">Password: </label>
+        <input id = "password" type = "password", name = "password" 
+        maxlength="50" required >
+        <input type = "submit" value = "login">
+    </form>
+    
+    <script src = 'events.js'></script>
+</body>
+</html>
