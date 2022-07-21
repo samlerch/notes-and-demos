@@ -431,7 +431,7 @@ public class UserService {
 	}
 	
 	public User enroll(int id, String courseNum) {
-		User u = ur.getReferenceById(id);
+		User u = ur.findById(id).get();
 		Course c = cr.getByCourseNum(courseNum);
 		
 		for (Course course : u.getCourses()) {
