@@ -1,0 +1,14 @@
+.welcome-page{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.welcome-message{
+    width:80%
+}
+
+img{
+    height:50%;
+}
