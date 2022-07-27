@@ -1,0 +1,49 @@
+<div id="course-main">
+
+    <h1> Courses available at our School </h1>
+    <div id="course-container">
+        <!-- We have a better way of displaying info -->
+        <!-- <div class="course">
+            <!-- We can use the double curly braces to inject strings/variables 
+            <h2>{{courses[0].courseNum}}</h2> <!-- CourseNum 
+            <h2>{{courses[0].name}}</h2> <!-- Name 
+            <h3>{{courses[0].description}}</h3> <!-- Description 
+            <h3>Available Seats: {{courses[0].availableSeats}}</h3> <!-- Available Seats 
+        </div>
+        <div class="course">
+            <!-- We can use the double curly braces to inject strings/variables 
+            <h2>{{courses[1].courseNum}}</h2> <!-- CourseNum 
+            <h2>{{courses[1].name}}</h2> <!-- Name 
+            <h3>{{courses[1].description}}</h3> <!-- Description 
+            <h3>Available Seats: {{courses[1].availableSeats}}</h3> <!-- Available Seats 
+        </div>
+        <div class="course">
+            <!-- We can use the double curly braces to inject strings/variables 
+            <h2>{{courses[2].courseNum}}</h2> <!-- CourseNum 
+            <h2>{{courses[2].name}}</h2> <!-- Name 
+            <h3>{{courses[2].description}}</h3> <!-- Description 
+            <h3>Available Seats: {{courses[2].availableSeats}}</h3> <!-- Available Seats
+        </div>
+        <div class="course">
+            <!-- We can use the double curly braces to inject strings/variables 
+            <h2>{{courses[3].courseNum}}</h2> <!-- CourseNum 
+            <h2>{{courses[3].name}}</h2> <!-- Name 
+            <h3>{{courses[3].description}}</h3> <!-- Description 
+            <h3>Available Seats: {{courses[3].availableSeats}}</h3> <!-- Available Seats
+        </div> -->
+
+        <course *ngFor = "let course of courses" [courseInputted] = "course"></course>
+    </div>
+
+    <!-- Now we'll use event binding to bind a click event to some function -->
+    <button (click) ="showOrHideObject()" [hidden] = "!hide"> Show the New Course Form</button>
+
+    <new-course [hidden] = "hide" (sendCourse) = "getCourseFromNewCourse($event)"></new-course>
+
+
+    <!-- We plan to use some property binding to assign a variable value to a property -->
+    <!-- <div [hidden]="hide">
+        <p>Something we may want to hide for whatever reason</p>
+    </div> -->
+
+</div>
