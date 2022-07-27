@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICourse } from 'src/app/Interfaces/ICourse';
+import { CourseService } from 'src/app/services/course.service';
 
 @Component({
   selector: 'course-page',
@@ -8,60 +9,72 @@ import { ICourse } from 'src/app/Interfaces/ICourse';
 })
 export class CoursePageComponent implements OnInit {
 
-  courses:ICourse[] = [
-    {
-      courseNum:"MATH101",
-      name:"Intro to Math",
-      description: "Learn the basics of math",
-      availableSeats:21
-    },
-    {
-      courseNum:"READ101",
-      name:"Intro to Reading",
-      description: "Learn how to read",
-      availableSeats:21
-    },
-    {
-      courseNum:"HIST101",
-      name:"Intro to History",
-      description: "Learn the wars",
-      availableSeats:21
-    },
-    {
-      courseNum:"SCI101",
-      name:"Intro to Science",
-      description: "Learn to science",
-      availableSeats:21
-    }
-  ];
+  courses: ICourse[] = [];
 
-  course:ICourse = {
-    id:0,
-    courseNum:"",
-    name:"",
-    description:"",
-    availableSeats:0
+  // courses:ICourse[] = [
+  //   {
+  //     courseNum:"MATH101",
+  //     name:"Intro to Math",
+  //     description: "Learn the basics of math",
+  //     availableSeats:21
+  //   },
+  //   {
+  //     courseNum:"READ101",
+  //     name:"Intro to Reading",
+  //     description: "Learn how to read",
+  //     availableSeats:21
+  //   },
+  //   {
+  //     courseNum:"HIST101",
+  //     name:"Intro to History",
+  //     description: "Learn the wars",
+  //     availableSeats:21
+  //   },
+  //   {
+  //     courseNum:"SCI101",
+  //     name:"Intro to Science",
+  //     description: "Learn to science",
+  //     availableSeats:21
+  //   }
+  // ];
+
+  course: ICourse = {
+    id: 0,
+    courseNum: "",
+    name: "",
+    description: "",
+    availableSeats: 0
   }
 
 
-  hide:boolean = true;
+  hide: boolean = true;
 
-  showOrHideObject():void{
-    this.hide =!this.hide;
+  showOrHideObject(): void {
+    this.hide = !this.hide;
   }
 
-  getCourseFromNewCourse($event: any):void{
+  getCourseFromNewCourse($event: any): void {
     console.log("The sendCourse event that was emitted was found")
     console.log($event);
     this.course = $event;
-    this.courses.push(this.course)
+    // this.courses.push(this.course)
+    this.addCourse(this.course)
     console.log(this.courses)
     this.hide = !this.hide
   }
 
-  constructor() { }
+  addCourse(course:ICourse):void{
+    this.courses = this.cs.addCourse(course);
+  }
+
+  // We need to tell angular that we want to use the service we made in our component
+  // We'll do that with injection
+  constructor(private cs: CourseService) { }
 
   ngOnInit(): void {
+    // To initialize our array, we're going to utilize the ngOnInit lifecycle method to grab the courses from our service
+    // And then display them
+    this.courses= this.cs.getCourses();
   }
 
 }
