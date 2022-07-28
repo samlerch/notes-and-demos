@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'navbar',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { 
+  navigateLogin():void{
+    // Inside of here we'll set up some navigation to transport us to the login page
+    this.router.navigate(['login']);
+  }
+
+  // I need to get a router instance so I'll get it in the constructor
+  constructor(private router:Router) { 
     console.log("In the constructor of the navbar")
   }
 

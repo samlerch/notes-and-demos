@@ -1,17 +1,17 @@
 <!-- First we looked at ngFor so now let's look at ngIf and some Attribute Directives -->
 <div *ngIf="selected; else elseBlock">
     <div [ngClass] = "['course', 'selected']" (click) = "selectCourse()">
-        <h2>{{courseInputted.courseNum}}</h2> <!-- CourseNum -->
-        <h2>{{courseInputted.name}}</h2> <!-- Name -->
-        <h3>{{courseInputted.description}}</h3> <!-- Description -->
+        <h2>{{courseInputted.courseNum |uppercase}}</h2> <!-- CourseNum -->
+        <h2>{{courseInputted.name | titlecase}}</h2> <!-- Name -->
+        <h3>{{courseInputted.description | description}}</h3> <!-- Description -->
         <h3>Available Seats: {{courseInputted.availableSeats}}</h3> <!-- Available Seats -->
     </div>
 </div>
 <ng-template #elseBlock>
     <div [ngClass] = "['course', 'not-selected']" (click) = "selectCourse()">
-        <h2>{{courseInputted.courseNum}}</h2> <!-- CourseNum -->
-        <h2>{{courseInputted.name}}</h2> <!-- Name -->
-        <h3>{{courseInputted.description}}</h3> <!-- Description -->
+        <h2>{{courseInputted.courseNum | uppercase}}</h2> <!-- CourseNum -->
+        <h2>{{courseInputted.name | titlecase}}</h2> <!-- Name -->
+        <h3>{{courseInputted.description | description}}</h3> <!-- Description -->
         <h3>Available Seats: {{courseInputted.availableSeats}}</h3> <!-- Available Seats -->
     </div>
 </ng-template>

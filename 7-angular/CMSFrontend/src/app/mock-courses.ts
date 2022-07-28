@@ -2,7 +2,7 @@ import { ICourse } from "./Interfaces/ICourse";
 
 export const COURSES: ICourse[] = [
     {
-        courseNum:"MATH101",
+        courseNum:"math101",
         name:"Intro to Math",
         description: "Learn the basics of math",
         availableSeats:21
@@ -10,11 +10,11 @@ export const COURSES: ICourse[] = [
       {
         courseNum:"READ101",
         name:"Intro to Reading",
-        description: "Learn how to read",
+        description: "",
         availableSeats:21
       },
       {
-        courseNum:"HIST101",
+        courseNum:"hist101",
         name:"Intro to History",
         description: "Learn the wars",
         availableSeats:21

@@ -1,0 +1,14 @@
+<h1 style="margin-top:100px;">Welcome to our School!</h1>
+<p>Login to continue</p>
+
+<form id="login" (ngSubmit) = "onSubmit()">
+    <div class = "input-div">
+        <label for="username">Username:</label>
+        <input id = 'username' type="text" name="username" required [(ngModel)] = "username">
+    </div>
+    <div class = "input-div">
+        <label for="password">Password:</label>
+        <input id = 'password' type="password" name="password" required [(ngModel)] = "password">
+    </div>
+    <input type="submit" value="Login">
+</form>

@@ -1,13 +1,13 @@
 <div class = 'navbar'>
     <ul class = 'nav-list'>
         <li class = 'nav-item'>
-            <a class = "nav-link" href = '#'>
+            <a class = "nav-link" routerLink = "home">
                 <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/800px-South_Florida_Bulls_logo.svg.png"
                 height = "60px" width = "60px" id = 'logo'>
             </a>
         </li>
         <li class = 'nav-item'>
-            <a class = "nav-link" href = '#'>Courses</a>
+            <a class = "nav-link" routerLink = "courses">Courses</a>
         </li>
         <li class = 'nav-item'>
             <a class = "nav-link" href = '#'>User Profile</a>
@@ -16,7 +16,7 @@
             <a class = "nav-link" href = '#'>Enroll</a>
         </li>
         <li class = 'nav-item'>
-            <button id="login-button" onclick = "window.location.href = '#'">Student Login</button>
+            <button id="login-button" (click) = "navigateLogin()">Student Login</button>
         </li>
     </ul>
 </div>
