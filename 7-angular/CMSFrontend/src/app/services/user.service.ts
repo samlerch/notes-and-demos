@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { IUser } from '../Interfaces/IUser';
 
 @Injectable({
@@ -15,7 +16,8 @@ export class UserService {
     username: ""
   }
 
-  url:string = "http://demoproject-env.eba-gnzwb8nf.us-east-1.elasticbeanstalk.com"
+  url:string = environment.apiURL;
+  // url:string = "http://demoproject-env.eba-gnzwb8nf.us-east-1.elasticbeanstalk.com"
 
   // Now we need to create the actual method that will allow us to login
   // Dont forget to add headers to make the right content type

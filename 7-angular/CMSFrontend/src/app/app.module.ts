@@ -12,6 +12,9 @@ import { CourseComponent } from './components/course/course.component';
 import { DescriptionPipe } from './pipes/description.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginPageComponent } from './components/login-page/login-page.component';
+import { EnrollComponent } from './components/enroll/enroll.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { LoginPageComponent } from './components/login-page/login-page.component
     NewCourseComponent,
     CourseComponent,
     DescriptionPipe,
-    LoginPageComponent
+    LoginPageComponent,
+    EnrollComponent
   ],
   imports: [
     BrowserModule,

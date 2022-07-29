@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ICourse } from 'src/app/Interfaces/ICourse';
 import { CourseService } from 'src/app/services/course.service';
 
@@ -9,7 +10,8 @@ import { CourseService } from 'src/app/services/course.service';
 })
 export class CoursePageComponent implements OnInit {
 
-  courses: ICourse[] = [];
+  // courses: ICourse[] = [];
+  courses:Observable<ICourse[]> = new Observable<ICourse[]>();
 
   // courses:ICourse[] = [
   //   {
@@ -64,7 +66,7 @@ export class CoursePageComponent implements OnInit {
   }
 
   addCourse(course:ICourse):void{
-    this.courses = this.cs.addCourse(course);
+    this.cs.addCourse(course);
   }
 
   // We need to tell angular that we want to use the service we made in our component
@@ -74,7 +76,12 @@ export class CoursePageComponent implements OnInit {
   ngOnInit(): void {
     // To initialize our array, we're going to utilize the ngOnInit lifecycle method to grab the courses from our service
     // And then display them
-    this.courses= this.cs.getCourses();
+    // this.courses= this.cs.getCourses();
+
+    // Now with the newest version, I'll call the method to get the courses
+    // and then pull the value from the subject
+    this.cs.getCourses();
+    this.courses = this.cs.subject;
   }
 
 }

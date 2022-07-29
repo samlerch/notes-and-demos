@@ -24,8 +24,6 @@ export class LoginPageComponent implements OnInit {
         this.userService.user = {
           id: data.id,
           username: data.username
-
-
         }
         this.username = "";
         this.password = "";
