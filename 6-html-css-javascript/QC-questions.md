@@ -9,34 +9,95 @@
 ### Basic
 
 * What is JavaScript? What do we use it for?
+Javascript is a high leveled, interpreted, multiparadigmed, dynamically typed programming language. Javascript is used by programmers across the world to create dynamic and interactive web content like applications and browsers.
 
 * Can we run JavaScript in a web browser, on a server, or both?
 
+Javascript primarily runs on a web browser, but it can be run using a runtime environment specifically designed to run javascript like node.js
+
 * What are the benefits of JS over your core language? Drawbacks?
+
+https://www.geeksforgeeks.org/difference-between-java-and-javascript/
 
 * What programming paradigm(s) does JS support?
 
+Object oriented, procedural, functional
+
 * What are the data types in JS?
+
+-   string
+-   number
+-   boolean
+-   null
+-   undefined
+-   object
+-   Symbol
 
   * What is the type of NaN? What is the isNaN function?
 
+  NaN is a number despite standing for Not a Number. The function isNaN returns true if the parameter in question is not a number, and false otherwise
+
   * What is the data type of a function?
+
+  Object
 
   * What about an array?
 
+  Object
+
   * What is the difference between undefined and null?
 
+  Undefined is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything. Null is a variable that is defined but is missing a value.
+
 * What are JS objects? what is the syntax?
+
+JavaScript object is a standalone entity that holds multiple values in terms of properties and methods. Object property stores a literal value and method represents function.
+
+```javascript
+{
+  property: value,
+  property2:value2
+}
+```
 
 * Use the object literal syntax to create an object with some properties
 
 * What are arrays in JS? can you change their size?
 
+Arrays in JS are objects that can store any number of variables inside them. Since JS is dynamically typed, these values need not be of the same data type. Their size increases or decreses automatically based off the amount of data
+
 * List some array methods and explain how they work.
+
+- findIndex(): Returns the index of the first element in the array that satisfies the provided testing function, or -1 if no appropriate element was found.
+
+- forEach(): Calls a function for each element in the calling array.
+
+- filter(): Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
+
+- map(): Returns a new array containing the results of invoking a function on every element in the calling array.
+
+- sort(): Sorts the elements of an array in place and returns the array.
 
 * What is JSON? Is it different from JS objects?
 
+JSON (JavaScript Object Notation) is a language-agnostic data interchange format. Theere are some slight differences between JS object and JSON. For example in a JS object you can omit the double quotes on properties/values. JS Objects can also contain functions whereas JSON cannot. Additionally, JSON is language-agnostic meaning it can be created and used by other programming languages, whereas JS objects can only be used by JS.
+
 * What are some ways you can use functions in JS?
+
+```Javascript
+function myFunction(a, b) {
+  return a * b;
+}
+
+const x = function (a, b) {return a * b};
+
+(function () {
+  let x = "Hello!!";  // I will invoke myself
+})();
+
+// ES6
+const x = (x, y) => x * y;
+```
 
 * What are the different scopes of variables in JS?
 
