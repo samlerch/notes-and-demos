@@ -95,7 +95,7 @@
   
 * If two objects are equal, do they have the same hashcode? If not equal?
 
- - If two objects have the same hashcode then they are NOT necessarily equal. But if objects are equal, then they MUST have same hashcode.
+  - If two objects have the same hashcode then they are NOT necessarily equal. But if objects are equal, then they MUST have same hashcode.
 
 * What data types are supported in switch statements?
 
