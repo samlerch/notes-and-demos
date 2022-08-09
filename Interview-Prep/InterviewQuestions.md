@@ -1,7 +1,7 @@
 # Java
 
 - What is Java?
--   yes
+-- yes
 
 - What is an object, and a class?
 
