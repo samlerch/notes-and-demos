@@ -12,7 +12,7 @@
   - JDK: Java Developer Kit. Developer Tools, debugger, compiler, and JRE
   
 * What is an object / class?
- - A class is a blueprint for creating objects (contains constructors, methods and fields). An object is like a house made from a blueprint, known as a virtualization of a real life object.
+  - A class is a blueprint for creating objects (contains constructors, methods and fields). An object is like a house made from a blueprint, known as a virtualization of a real life object.
   
 * What is the root class from which every class extends?
   
@@ -64,7 +64,7 @@
  
 * What is the difference between `static` and `final` variables?
 
- - static variables are shared by all the instances of objects and it has only single copy. A final variable is a constant and it cannot be changed. However, if the variable holds a reference to an object, the state of the object may still be changed and manipulated.
+  - static variables are shared by all the instances of objects and it has only single copy. A final variable is a constant and it cannot be changed. However, if the variable holds a reference to an object, the state of the object may still be changed and manipulated.
   
 * What are the default values for all data types in Java?
 
@@ -103,7 +103,7 @@
   
 * How to pass multiple values with a single parameter into a method?
 
- - Use varags `...`
+  - Use varags `...`
   
 * Can we access static/non-static variables from static/non-static methods (see example)?
 ```java
@@ -128,16 +128,16 @@ public class A {
 
 * How would you clone an object?
 
- - First, tag the class with the Cloneable marker interface. Next, invoke clone(). The clone method is declared in java.lang.Object and does a shallow copy.
+  - First, tag the class with the Cloneable marker interface. Next, invoke clone(). The clone method is declared in java.lang.Object and does a shallow copy.
   
 * What is the difference between `==` and `.equals()`?
 
- - == - tests to see if two reference variables refer to the exact same instance of an object.
- - .equals() - tests to see if the two objects being compared to each other are equivalent, but they need not be the exact same instance of the same object.
+  - == - tests to see if two reference variables refer to the exact same instance of an object.
+  - .equals() - tests to see if the two objects being compared to each other are equivalent, but they need not be the exact same instance of the same object.
  
 * What is an enhanced for loop?
 
- - Enhanced for loop allows easier traversal of Collections (actually any arrays or Iterables) - syntax: for (Object o : collection) {...}
+  - Enhanced for loop allows easier traversal of Collections (actually any arrays or Iterables) - syntax: for (Object o : collection) {...}
   
 * What are 3 usages of `super` keyword?
 
@@ -157,7 +157,7 @@ public class A {
  
 * Is this allowed? Is this an example of method overloading or overriding?
 
-- Overriding. This is an example of covariant return types: a method is allowed to return objects that are child classes of the return type. Also, when overriding a method, the return type of the new method can be a child class of the original return type
+  - Overriding. This is an example of covariant return types: a method is allowed to return objects that are child classes of the return type. Also, when overriding a method, the return type of the new method can be a child class of the original return type
 
 ```java
 public abstract class Super {
@@ -175,13 +175,13 @@ public abstract class Sub extends Super {
   
 * What are the implicit modifiers for interface variables?
 
- - public, static, final
+   - public, static, final
   
 * What is the difference between method overloading and overriding?
 
-- Method overloading - Within the same class when one declares more than method with the same name but different signature (parameters).
+  - Method overloading - Within the same class when one declares more than method with the same name but different signature (parameters).
 
-- Method overriding - In a subclass when one declares an identical method from the superclass, this method overrides the one in the superclass
+  - Method overriding - In a subclass when one declares an identical method from the superclass, this method overrides the one in the superclass
   
 * Can you overload / override a main method? static method? a private method? a default method? a protected method?
 
@@ -221,11 +221,11 @@ public class Hello {}
 
 * What are the interfaces in the Collections API?
 
-- Iterable, Collection, List, Queue, Set, Map
+  - Iterable, Collection, List, Queue, Set, Map
   
 * What is the difference between a `Set` and a `List`?
 
- - Set does not allow duplicates (its members are unique)
+  - Set does not allow duplicates (its members are unique)
   
 * What is the difference between a `Array` and an `ArrayList`?
 
@@ -256,7 +256,7 @@ mylist.add(new Person()); // what happens?
 ```
 * What are generics? What is the diamond operator (`<>`)?
  
- - A way of specifying a type within a data structure - they enforce type safety. <> operator lets you infer generic types from the LHS of assignment operation
+  - A way of specifying a type within a data structure - they enforce type safety. <> operator lets you infer generic types from the LHS of assignment operation
 
 
 <br>
@@ -310,7 +310,7 @@ public class MyException extends RuntimeException {}
   
 * What is TDD?
 
- - Test-driven development - write unit tests before application code, then write code to make tests pass. Repeat this process until functionality is complete.
+  - Test-driven development - write unit tests before application code, then write code to make tests pass. Repeat this process until functionality is complete.
   
 * What are the annotations in JUnit? Order of execution?
 
