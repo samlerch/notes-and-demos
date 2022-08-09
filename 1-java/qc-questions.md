@@ -37,7 +37,7 @@
 * What is a POJO? What is a bean?
 
   - POJO: Plain Old Java Object
-  - Bean: A special POJO that extends Serializable and it is entirely encapsulated (has private fields that are only accessible through getters/setters)
+  - Bean: A special POJO that implements Serializable and it is entirely encapsulated (has private fields that are only accessible through getters/setters)
   
 * How can you force garbage collection in Java?
 
