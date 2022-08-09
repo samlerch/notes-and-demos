@@ -1,19 +1,30 @@
 # Java
 
 - What is Java?
-  * Yes
+    * Y
 
 - What is an object, and a class?
     * yes
 
 - What is the JVM?
-
+    * Java Virtual Machine. The JVM is a runtime environment that allows Java to run anywhere platform independent
 - What are the primitive types in Java
-
+    * boolean
+    * int
+    * double
+    * char
+    * short
+    * float
+    * long
+    * byte
 - Types of Constructors
-
+    * No args, All args, some mix. No args is the default constructor inherited from the object class. If you do not define a constructor you will have a no args one
+    * Defining a constructor will get rid of the no args one unless you explicitly define a no args constructor
+    * Constructors should have no return type. The name should be the class name.
 - What is the difference between string, string builder, and string buffer?
-
+    * String is a java object that is a collection of text. They are stored in a specific area on the heap called the String Pool. Strings take up a large amount of memory. As such a string with the exact same content will only be stored once. This can be avoided by explicitly using the String constructor with the new keyword
+    * String Builder is a class most commonly used when you need to frequently modify a string.
+    - StringBuilder sb = new StringBuilder();
 - What are the types of memory in Java
 
 - Difference between abstract classes and interfaces?
