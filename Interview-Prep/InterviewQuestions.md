@@ -4,6 +4,7 @@
   * Yes
 
 - What is an object, and a class?
+    * yes
 
 - What is the JVM?
 
