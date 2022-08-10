@@ -1,7 +1,7 @@
 # Java
 
 - What is Java?
-    * Y
+    * Java is a strongly, statically typed high level OOP language. It is platform indpedent.
 
 - What is an object, and a class?
     * yes
