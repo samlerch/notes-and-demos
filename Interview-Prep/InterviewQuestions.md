@@ -199,9 +199,11 @@
 - What is stateless
 
 - What are the HTTP methods supported by REST?
-
+   * PATCH, PUT, POST, GET, DELETE
+   * PATCH is a partial update to a resource
+   * PUT is idempotent
 - RESTController vs Controller
-
+   * @RestController Includes the Controller annotation and the @ResponseBody annotation
 # AWS/Cloud
 
 - What is platform as a service?
