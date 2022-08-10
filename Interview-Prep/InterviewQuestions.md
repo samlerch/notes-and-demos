@@ -40,45 +40,58 @@
 - How to handle class not found exception?
     * It depends on the root cause. If the class doesn't  exist make it. If it does exist check if it is imported.
 - What is the difference between Throw and Throws?
-
+   * Throw is used to actually create an exception and pass it up the stack. Throws is used to indicate in a method signature that the method may throw a certain exception.
 - Tell me about access modifiers
-
+   * Public - anywhere
+   * Protected - package and subclass
+   * Default - package
+   * private - only this class
 - Tell me about the static keyword
-
+   * The static keyword indicates that a variable should only have one instance no matter how many objects are created. When used on a method it denotes the method can be executed without an instance of the class. A static class is a nested class that can be instantiated without instantiating the outer class.
 - Can you do static overriding?
-
+   * Static methods cannot be overriden but you can hide a method. Method hiding is essentially overriding a static method replacing the parent class implementation with the child class. Method hiding is done at compile time while overriding is done at runtime.
 - What are the 4 pillars of OOP? Tell me about them
 
 - What is Encapsulation and Abstraction?
 
 - What is Polymorphism?
-
+   * One of the pillars of OOP. The ability for something to be many things. Runtime polymorphism is achieved throw overriding and compile time is achieved with overloading.
 - How did you connect your database to java?
-
+   * In the application.yml file of our SpringBoot Project we defined the
+   * DB url
+   * DB username
+   * DB password
+   * DB driver
 - How does the driver work in JDBC?
 
 - What interfaces are associated with JDBC?
-
+   * DriverManager
+   * Connection
+   * Statement
+   * PreparedStatement - safe against sql injection. Precompiled by the jvm before being sent
+   * CallableStatement - used to execute stored procedures
+   * ResultsSet - set iterated through with results
 - What are generics?
 
 - Tell me about Arraylists
 
 - Difference between ArrayList and Vector
-
+   * An ArrayList is not threadsafe and grows by 50%. A vector is thredsafe and doubles in size
 - What is the difference between List and Set in collections API?
-
+   * Set cannot have duplicates
 - Tell me about Hashmaps
 
 - Give me an example of a Java 8 specific feature? What does that feature entail?
-
+   * Java 8 introduced streams. Streams are a way to iterate through a collection and perform certain operations
+   * There are 2 types of operations, terminal and non-terminal. Terminal creates some output and ends the stream. An example is Collect
 - What is Java streaming?
 
 - Difference between comparable and comparator
 
 - Tell me about functional interface?
-
+   * Functional interfaces are an interface with a single abstract method that is commonly implemented using lambdas
 - What are lambda expressions?
-
+   
 - Do you know Method References?
 
 - Difference between lambda expression and method reference?
