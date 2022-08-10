@@ -1,7 +1,7 @@
 # Java
 
 - What is Java?
-    * Java is a strongly, statically typed high level OOP language. It is platform indpedent.
+    * Java is a strongly, statically typed high level OOP language. It is platform indpendent.
 
 - What is an object, and a class?
     * An object is a virtualization of a real life object. A class is the blueprint to build that. Classes can have methods, fields, constructors, and other classes inside of them.
@@ -146,7 +146,7 @@
 - Tell me about transaction management in a Spring Project
 
 - What are the annotations that you know for spring jpa and what do they mean?
-
+   @Transactional, @Query, @Modifying, @Id, @Entity, @ManyToMany, @OneToMany, @ManyToOne, @Column,
 - Differences between JPA/Hibernate/JDBC?
 
 - Do you know what stereotypes annotations are?
