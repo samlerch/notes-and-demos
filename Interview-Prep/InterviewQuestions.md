@@ -110,11 +110,11 @@
 # SQL/Persistence
 
 - What is Relational Database Management Services (RDMS)?
-
+   * The software used to execute CRUD operations. For example SQL, PostgreSQL, MySQL
 - What is SQL?
-
+   * Structured Query Language
 - Do you know the difference between char and varchar datatype?
-
+   * char is a static size while varchar is resizeable
 - What is CRUD? Which SQL keywords are associated with these operations?
 
 - How to select top 15% employees base on salary
@@ -124,21 +124,23 @@
 - What are joins?
 
 - What is the difference between a view and a table?
-
+   * Materialized view is a static image of the table at certain time.
 - What is DAO?
 
 # Spring/Spring Boot
 
 - What is dependencies Injection?
-
+   * A design pattern to remove dependenies by providing the config in an external source. two types constructor and setter. 
+   * Setter occurs after
 - How many types of beans in spring?
-
+   * 6 types, Singleton, prototype, request, session, application, websocket
 - What annotations that are use in Spring?
 
 - Where would you do the configuration in a spring project?
-
+   * Utilize the @SpringBootApplication, which contains the @EnableAutoConfiguration
+   * You can override properties in application.yml or application.properties
 - How to handle exception in Spring project?
-
+   * @ExceptionHandler 
 - What is the difference between Spring and Spring Data?
 
 - Tell me about transaction management in a Spring Project
@@ -152,17 +154,21 @@
 - Describe annotation for each of the MVC application layers?
 
 - How you create Rest API in Spring boot?
-
+   * Uniform interface
+   * Client-Server model
+   * Stateless
+   * Cacheable (mark requests as cacheable or non-cacheable)
+   * Layered system
 - What is @RestController?
-
+   * Implicitly puts at @ResponseBody on any methods and marks the class with @Controller
 - Tell me about the Spring Boot Actuator
 
 - Why do we use Spring Boot
 
 - What are Spring Boot Annotations?
-
+   * provide meta data for the compiler. Tells the compiler how to link certain objects together
 - What is the difference between spring and springboot?
-
+   * Springboot is an opinionated version of Spring framework. It uses common settings that most developers would want to allow us to quicklky build enterprise level applications. 
 # SDLC
 
 - What is Agile?
@@ -179,14 +185,15 @@
 
 - What is an Http session?
 
-- What is the difference between a session and a cookie?
-
+- What is the difference between a session and a cookie? 
+   * cookies persist when you close your browser and expire after a set time stored client side. 
+   * Sessions close when you close your browser. Sessions are stored server side.
 - What are the HTTP status codes?
 
 - List some of the Http Verbs
 
 - Difference between Put and Post
-
+   * Put is idempotent (if you send the same request nothing will happen) post is not.
 - Do you know REST? Can you tell me about what it is?
 
 - What is stateless
@@ -198,9 +205,9 @@
 # AWS/Cloud
 
 - What is platform as a service?
-
+   * Computing resources are provided
 - What are cloud services and some known platforms?
-
+   * AWS, Azure, 
 - What are 5 different common cloud services/platforms?
 
 - Which AWS services did you use in your projects?
@@ -216,7 +223,7 @@
 - What are security roles, security groups?
 
 - Are you familiar with Identity Access Manager (IAM)?
-
+   * allows you to manage who can access your services and resources in AWS.
 # DevOps
 
 - What is CI/CD?
