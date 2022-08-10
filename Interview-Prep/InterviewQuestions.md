@@ -26,13 +26,17 @@
     * String Builder is a class most commonly used when you need to frequently modify a string.
     - StringBuilder sb = new StringBuilder();
 - What are the types of memory in Java
-
+    * The heap and the stack
+    * Objects are stored on the heap along with the string pool
+    * method invocations and local variables are stored on the stack. Each thread of exeuction gets its own stack
 - Difference between abstract classes and interfaces?
-
+    * Abstract classes can be 0 to 100% abstract and should be extended. They can have concrete or abstract methods. 
+    * Interfaces are 100% abstract and must be implemented
 - What is exception handling? How would you implement it?
-
+    * Exception handling is when the JVM throws an exception and you catch the exception or duck it. 
+    * To duck an exception in a method it should use the throws keyword to indicate it may throw that exception. It should still be handled later with a try/catch block
 - How to handle class not found exception?
-
+    * It depends on the root cause. If the class doesn't  exist make it. If it does exist check if it is imported.
 - What is the difference between Throw and Throws?
 
 - Tell me about access modifiers
