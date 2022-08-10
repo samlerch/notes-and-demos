@@ -150,9 +150,13 @@
 - Differences between JPA/Hibernate/JDBC?
 
 - Do you know what stereotypes annotations are?
-
+   * Stereotype annotations are annotations that tell the compiler information about how to wire components
+   * There are 4 total stereotypes which inherit from @Component. @Controller, @Service, @Repository
 - Describe annotation for each of the MVC application layers?
-
+   * There are 3 layers in a MVC application
+   * Persistence layer which uses the @Repository annotation
+   * Service layer which uses the @Service annotation
+   * Presentation layer which uses the @Controller annotation
 - How you create Rest API in Spring boot?
    * Uniform interface
    * Client-Server model
