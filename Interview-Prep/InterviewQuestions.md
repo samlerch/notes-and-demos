@@ -24,6 +24,8 @@
 - What is the difference between string, string builder, and string buffer?
     * String is a java object that is a collection of text. They are stored in a specific area on the heap called the String Pool. Strings take up a large amount of memory. As such a string with the exact same content will only be stored once. This can be avoided by explicitly using the String constructor with the new keyword
     * String Builder is a class most commonly used when you need to frequently modify a string.
+    * StringBuilder is not threadsafe while StringBuffer is threadsafe
+    * StringBuilder and StringBuffer are muteable. Strings are immuteable.
     - StringBuilder sb = new StringBuilder();
 - What are the types of memory in Java
     * The heap and the stack
