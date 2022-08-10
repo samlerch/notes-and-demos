@@ -4,7 +4,7 @@
     * Java is a strongly, statically typed high level OOP language. It is platform indpedent.
 
 - What is an object, and a class?
-    * yes
+    * An object is a virtualization of a real life object. A class is the blueprint to build that. Classes can have methods, variables, constructors, and other classes inside of them.
 
 - What is the JVM?
     * Java Virtual Machine. The JVM is a runtime environment that allows Java to run anywhere platform independent
