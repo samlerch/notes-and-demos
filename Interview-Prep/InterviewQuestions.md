@@ -32,8 +32,8 @@
     * Objects are stored on the heap along with the string pool
     * method invocations and local variables are stored on the stack. Each thread of exeuction gets its own stack
 - Difference between abstract classes and interfaces?
-    * Abstract classes can be 0 to 100% abstract and should be extended. They can have concrete or abstract methods. 
-    * Interfaces are 100% abstract and must be implemented
+    * Abstract classes can be 0 to 100% abstract and should be extended. They can have concrete or abstract methods. A subclass must implement all abstract methods unless it is also abstract.
+    * Interfaces are 100% abstract and must be implemented. Interface methods are implicitly public and abstract. Interface variables are implicitly public, static, and final. 
 - What is exception handling? How would you implement it?
     * Exception handling is when the JVM throws an exception and you catch the exception or duck it. 
     * To duck an exception in a method it should use the throws keyword to indicate it may throw that exception. It should still be handled later with a try/catch block
