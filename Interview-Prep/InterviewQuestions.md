@@ -74,28 +74,29 @@
 - What are generics?
 
 - Tell me about Arraylists
-
+   * ArrayList is a class that implements the List interface. It is a resizeable array that will grow and shrink as needed. It is index based. and part of the collections framework
 - Difference between ArrayList and Vector
    * An ArrayList is not threadsafe and grows by 50%. A vector is thredsafe and doubles in size
 - What is the difference between List and Set in collections API?
    * Set cannot have duplicates
 - Tell me about Hashmaps
-
+   * HashMap is part of the collection framework but does not implement the iterable or Collection interface. A hash map is a Key Value pair collection of values. To iterate through one you could use the EntrySet<>
 - Give me an example of a Java 8 specific feature? What does that feature entail?
    * Java 8 introduced streams. Streams are a way to iterate through a collection and perform certain operations
    * There are 2 types of operations, terminal and non-terminal. Terminal creates some output and ends the stream. An example is Collect
 - What is Java streaming?
-
+   * See above
 - Difference between comparable and comparator
-
+   * Comparable interface allows you to compare objects by overriding the compareTo() method. Note that you can only override this once. If you want multiple ways to compare you should use compartors instead
+   * Comparotor is another interface which can be implemented in multiple classes. Those classes can be passed to Collections.sort as a comparator object.
 - Tell me about functional interface?
    * Functional interfaces are an interface with a single abstract method that is commonly implemented using lambdas
 - What are lambda expressions?
-   
+   * lambda expressions are a short block of code that takes in paramaters and return a value. They are denoted using the arrow notation. You can use {} to denote a code block but then you must use a return statement at the end.
 - Do you know Method References?
-
+   * Using :: you can refer to a static method. for example System.out::println . This could be passed to say, queue.forEach(System.out::println);
 - Difference between lambda expression and method reference?
-
+   * method references could be expressed as lambda expressions. It comes down to readability and reuseablility which one to use.
 - What is TDD?
 
 - Are Unit tests mandatory
