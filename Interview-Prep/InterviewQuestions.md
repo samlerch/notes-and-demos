@@ -116,7 +116,11 @@
 - Do you know the difference between char and varchar datatype?
    * char is a static size while varchar is resizeable
 - What is CRUD? Which SQL keywords are associated with these operations?
-
+   * CRUD stands for Create, Update, Read, Delete
+   * Create - INSERT
+   * Update - UPDATE
+   * Read - SELECT
+   * Delete - DELETE
 - How to select top 15% employees base on salary
 
 - How to fetch top 10 salaried employees?
@@ -126,11 +130,13 @@
 - What is the difference between a view and a table?
    * Materialized view is a static image of the table at certain time.
 - What is DAO?
-
+   * Data Access Object is a design pattern used to seperate the application/business layer from the persistence layer. 
+   * (Instead of manipulating the SQL database directly we can manipulate models locally and then update the database)
 # Spring/Spring Boot
 
 - What is dependencies Injection?
    * A design pattern to remove dependenies by providing the config in an external source. two types constructor and setter. 
+   * Also Field injection
    * Setter occurs after
 - How many types of beans in spring?
    * 6 types, Singleton, prototype, request, session, application, websocket
