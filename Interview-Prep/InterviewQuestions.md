@@ -150,7 +150,9 @@
 - What is the difference between Spring and Spring Data?
 
 - Tell me about transaction management in a Spring Project
-
+   * @Transactional can be used to mark a method as a transaction. The method will start a transaction and commit it on return. The annotation can be class or method level.
+   * Spring boot projects with the spring-data dependency are have transaction management enabled by default.
+   * Transactions are rolled back when an unchecked exception is thrown. Can add a timeout, read only, or isolation levels.
 - What are the annotations that you know for spring jpa and what do they mean?
    @Transactional, @Query, @Modifying, @Id, @Entity, @ManyToMany, @OneToMany, @ManyToOne, @Column,
 - Differences between JPA/Hibernate/JDBC?
