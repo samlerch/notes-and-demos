@@ -285,15 +285,22 @@
 # Personal/Behavioral/Soft Skills
 
 - Tell me about yourself
+   * I am a full stack Java developer with a focus on developing enterprise Java applications.
+   * I recently graduated from George Mason with a bachelors in computer science.
+   * My time at Revature has given me important project experience working with agile development cycles and CI/CD pipeline.
 
 - What led you to Revature
-
+   * Revature offered a unique opportunity to fill in any holes in my knowledge and get confidence.
 - Talk about your projects overall
 
 - Tell me about your project roles and responsibilities
 
 - What technologies did you used for your projects?
-
+   * SpringBoot was used for our back end framework and Angular with npm was used for the front end.
+   * the database used was an AWS PostgreSQL RDS. 
+   * Projects were deployed using a CI/CD pipeline with AWS CodeBuild and an elastic beanstalk / S3 Bucket.
+   * Projects were managed using Git, kanban board, daily standup, SonarCloud
+   * testing was conducted with JUnit 4/5 and mockito or jasmine / karma. Coverage reports were generated using Jacoco or Istanbul.
 - Tell me about a time when you had a person that was hampering your progress as a team for a project
 
 - What are your strengths and weaknesses?
