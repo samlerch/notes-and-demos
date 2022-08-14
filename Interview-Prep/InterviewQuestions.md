@@ -267,19 +267,29 @@
 # Angular/TypeScript
 
 - What is TypeScript?
+   * Typescript is a superset of Java developed by Microsoft as an OOP version of JavaScript. 
+   * TypeScript introduces many core features such as interfaces, statically typed, strongly typed.
+   * TypeScript cannot be run natively in browser but is instead trans-piled into JavaScript.
 
 - What is the Angular framework?
 
 - How to create new project in Angular?
 
 - What is a directive in Angular?
+   * a directive in angular manipulates templates.
+   * in other words a directive manipulates or modified behavior of elements in the DOM
 
 - What bindings do you know in Angular?
+   * Property binding -
+   * Event Binding - 
 
 - What is a service in angular?
+   * A service is an object that is only instantiated once and that instance is used throughout the apps life
+   * They hold logic for the business layer and can be injected into multiple components.
 
 - How to inject services in Angular Component?
-
+   * use the @Injectable() on the service 
+   * in the component add it to the constructor and import the service
 - Differences between JavaScript and TypeScript?
 
 # Personal/Behavioral/Soft Skills
