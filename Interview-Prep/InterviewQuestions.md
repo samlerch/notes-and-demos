@@ -102,6 +102,7 @@
 - Are Unit tests mandatory
 
 - What is boilerplate?
+   * boiler plate is essentially code that is necessary but repeated and very similar. For example, getters and setter methods on beans. Lombok provides a way to reduce this boiler code.
 
 # Git
 
